@@ -25,8 +25,22 @@ body {
   background-color: #000;
 }
 header {
+  max-width: 1440px;
+  min-width: 393px;
+  max-height: 1000px;
   background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
+  margin: 0 auto;
   /* TODO: learn linear-gradient color styles */
+}
+main {
+  margin: 0 auto;
+  margin-top: 300px;
+  max-width: 1440px;
+  min-width: 393px;
+}
+.main > section {
+  max-width: 1044px;
+  margin-top: 100px;
 }
 .display-flex {
   display: flex;
@@ -91,12 +105,9 @@ header {
   font-weight: 400;
 }
 .banner-img {
-  /* width: 100%; */
-  /* width: 349px;
-  height: 580px; */
-  margin-left: 87px; /* flex-shrink: 0;
-  width: 100%;
-  height: 100%; */
+  width: 349px;
+  height: 580px;
+  margin-left: 87px;
 }
 .join-now-btn {
   font-size: 18px;
@@ -159,9 +170,8 @@ header {
 #card2 {
   align-items: center;
   padding: 20px 23px;
-  margin-left: -400px;
-  /* margin-right: -180px; */
-  margin-top: -200px;
+  margin-left: -130px;
+  margin-top: 120px;
   color: white;
   width: 206px;
   height: 90px;
@@ -169,6 +179,44 @@ header {
   border: 1px solid rgba(255, 255, 255, 0.1);
   background: rgba(48, 48, 48, 0.54);
   backdrop-filter: blur(20px);
+}
+/* ------------------------- Main styles: */
+/* this section is about: Change Your Habits */
+
+.habits {
+  text-align: center;
+  margin: 0 auto;
+}
+.habits-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+.habits-description {
+  /* text-align: center; */
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0 auto;
+  margin-bottom: 58px;
+}
+.items-img {
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.habits-container {
+  /*  */
+}
+.habit-item-title {
+  margin-top: 30px;
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.habit-item-description {
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 400;
 }
 
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
@@ -183,6 +231,7 @@ header {
   }
   .banner-img {
     width: 353px;
+    margin-left: 150px;
   }
   .builder {
     width: 100%;
@@ -208,8 +257,14 @@ header {
     padding: 0;
     width: 146px;
     height: 70px;
-    margin-right: -650px;
-    margin-top: -550px;
+    margin-right: 100px;
+    margin-top: 100px;
+  }
+  .habits-container {
+    flex-direction: column;
+  }
+  .habits {
+    margin-top: 100px;
   }
 }
 
