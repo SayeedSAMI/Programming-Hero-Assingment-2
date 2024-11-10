@@ -36,10 +36,9 @@ main {
   /* max-width: 1440px; */
   min-width: 393px;
 }
-/* .main > section {
-  max-width: 1044px;
-} */
-
+footer {
+  margin-top: 100px;
+}
 .display-flex {
   display: flex;
 }
@@ -364,16 +363,76 @@ td {
   border: none;
   border-radius: 42px;
   background: #e6533c;
+  margin-bottom: 52px;
 }
 .bmi-form {
   max-width: 300px;
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 223px);
-  /* grid-template-areas:
-    "height w-eight"
-    "age sex"
-    "activity-factor"; */
+}
+.our-team {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-team-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.our-team-description {
+  text-align: center;
+  max-width: 671px;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 58px;
+}
+/* this section is about: Meet our Team */
+.trainer-container {
+  display: grid;
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  max-width: 850px;
+}
+.trainer-image {
+  border-radius: 18px;
+  height: 272px;
+  width: 272px;
+  object-fit: cover;
+}
+.trainer-name {
+  /* background-color: orange; */
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 900;
+  position: absolute;
+  /* top: 0px;
+  bottom: 0px;*/
+  left: 10px;
+  bottom: 20px;
+}
+.trainer {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 1rem;
+  font-weight: 400;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+.t-c {
+  margin: 0px;
+  padding: 0px;
+  height: 272px;
+  width: 272px;
+  position: relative;
 }
 
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
@@ -436,6 +495,11 @@ td {
   }
   .join-now-btn2 {
     width: 100%;
+  }
+  .trainer-container {
+    width: 272px;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
