@@ -33,13 +33,13 @@ header {
 }
 main {
   margin: 0 auto;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   min-width: 393px;
 }
 /* .main > section {
   max-width: 1044px;
-  margin-top: 100px;
 } */
+
 .display-flex {
   display: flex;
 }
@@ -284,6 +284,97 @@ Mile Easily*/
   /* zoom: 200%; */
   /* transform: scale(1, 1); */
 }
+/* this section is about: BMI Calculator */
+.bmi-title-container {
+  margin: 0 auto;
+  margin-top: 100px;
+  max-width: 577px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bmi-title {
+  font-size: 3rem;
+  font-weight: 900;
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+.bmi-description {
+  margin: 0 auto;
+  max-width: 671px;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.calculator-container {
+  margin-top: 88px;
+  justify-content: space-around;
+  align-items: center;
+  background: #222;
+  /* max-width: ; */
+}
+.bmi-chart {
+}
+.chart-title {
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+
+#thead-title {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 500;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  font-size: 14px;
+  padding: 13px 70px 13px 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  width: 150px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.calculate {
+  max-width: 443px;
+  width: auto;
+  font-size: 1.7rem;
+  font-weight: 900;
+}
+.calculate-des {
+  width: auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+.form-info {
+  padding: 12px 40px 12px 20px;
+  border-radius: 8px;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+}
+.join-now-btn3 {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin-top: 34px;
+  font-weight: 600;
+  max-width: 224px;
+  height: 25px;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 42px;
+  background: #e6533c;
+}
+.bmi-form {
+  max-width: 300px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(2, 223px);
+  /* grid-template-areas:
+    "height w-eight"
+    "age sex"
+    "activity-factor"; */
+}
 
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
 
@@ -331,6 +422,13 @@ Mile Easily*/
   }
   .habits-container {
     flex-direction: column;
+  }
+  .calculator-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .bmi-form {
+    grid-template-columns: repeat(2, 50%);
   }
   .run-extra {
     gap: 31px;
