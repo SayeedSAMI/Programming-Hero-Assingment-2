@@ -218,6 +218,58 @@ main {
   font-size: 14px;
   font-weight: 400;
 }
+/* this section is about: Run an Extra 
+Mile Easily*/
+.run-extra {
+  background: #222;
+  /* justify-content: flex-end; */
+  align-items: center;
+  margin: 0 auto;
+  max-width: 974px;
+  height: 312px;
+  gap: 165px;
+  border-radius: 18px;
+  padding: 30px 32px 29px 54px;
+}
+.run-extra-container {
+  max-width: 443px;
+  height: 312px;
+}
+.run-extra-title {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 14px;
+}
+.run-extra-description {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 14px auto 34px auto;
+}
+/* .run-img {
+  border-radius: 15px;
+  width: 50%;
+  height: 312px;
+  background-image: url("../images/run.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+.run-img {
+  /* justify-content: center;
+  align-items: center; */
+  width: 100%;
+  height: 100%;
+}
+.run-img img {
+  /* max-width: 366px;
+  max-height: 312px; */
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  /* object-fit: cover; */
+  /* zoom: 200%; */
+  /* transform: scale(1, 1); */
+}
 
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
 
@@ -265,6 +317,9 @@ main {
   }
   .habits {
     margin-top: 100px;
+  }
+  .run-extra {
+    flex-direction: column;
   }
 }
 
