@@ -27,21 +27,19 @@ body {
 header {
   max-width: 1440px;
   min-width: 393px;
-  max-height: 1000px;
   background: linear-gradient(180deg, #111 0%, rgba(119, 119, 119, 0) 100%);
   margin: 0 auto;
   /* TODO: learn linear-gradient color styles */
 }
 main {
   margin: 0 auto;
-  margin-top: 300px;
   max-width: 1440px;
   min-width: 393px;
 }
-.main > section {
+/* .main > section {
   max-width: 1044px;
   margin-top: 100px;
-}
+} */
 .display-flex {
   display: flex;
 }
@@ -186,6 +184,7 @@ main {
 .habits {
   text-align: center;
   margin: 0 auto;
+  margin-top: 100px;
 }
 .habits-title {
   font-size: 3rem;
@@ -205,6 +204,7 @@ main {
   border-radius: 50%;
 }
 .habits-container {
+  justify-content: center;
   /*  */
 }
 .habit-item-title {
@@ -215,6 +215,7 @@ main {
 }
 .habit-item-description {
   margin: 0 auto;
+  width: 231px;
   font-size: 14px;
   font-weight: 400;
 }
@@ -226,7 +227,7 @@ Mile Easily*/
   align-items: center;
   margin: 0 auto;
   max-width: 974px;
-  height: 312px;
+  margin-top: 100px;
   gap: 165px;
   border-radius: 18px;
   padding: 30px 32px 29px 54px;
@@ -245,6 +246,19 @@ Mile Easily*/
   font-weight: 400;
   font-size: 1rem;
   margin: 14px auto 34px auto;
+}
+.join-now-btn2 {
+  font-size: 18px;
+  margin-right: 14px;
+  font-style: normal;
+  font-weight: 600;
+  /* max-width: 224px; */
+  width: 50%;
+  padding: 16px 40px;
+  gap: 10px;
+  border: none;
+  border-radius: 42px;
+  background: #e6533c;
 }
 /* .run-img {
   border-radius: 15px;
@@ -274,6 +288,9 @@ Mile Easily*/
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
 
 @media screen and (max-width: 576px) {
+  .habits {
+    margin-top: 0px;
+  }
   .list-ul-container {
     display: none;
   }
@@ -315,11 +332,12 @@ Mile Easily*/
   .habits-container {
     flex-direction: column;
   }
-  .habits {
-    margin-top: 100px;
-  }
   .run-extra {
+    gap: 31px;
     flex-direction: column;
+  }
+  .join-now-btn2 {
+    width: 100%;
   }
 }
 
