@@ -21,6 +21,7 @@
 }
 
 body {
+  /* margin: 0; */
   color: #fff;
   background-color: #000;
 }
@@ -37,7 +38,17 @@ main {
   min-width: 393px;
 }
 footer {
+  display: flex;
+  margin: 0 auto;
   margin-top: 100px;
+  min-width: 393px;
+  /* margin-left: 20px;
+  padding: 20px; */
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.1);
 }
 .display-flex {
   display: flex;
@@ -434,6 +445,48 @@ td {
   width: 272px;
   position: relative;
 }
+/* this section is about: Footer */
+footer {
+}
+.the-footer-section {
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+.footer-title-container {
+  /* max-width: 443px; */
+  max-width: 300px;
+  margin-top: 66px;
+}
+.get-started-container {
+  margin-top: 66px;
+}
+.footer-title {
+  font-size: 4.3rem;
+  font-style: italic;
+  font-weight: 800;
+}
+.footer-description {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.get-started {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.footer-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.copy-right {
+  margin-top: 79px;
+  /* width: 1000px; */
+  width: 60%;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+}
 
 /*  Responsive layout section for:  mobile or  Small device: upto 576 px */
 
@@ -501,6 +554,17 @@ td {
     gap: 20px;
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .the-footer-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .footer-title-container {
+    width: 317px;
+  }
+  /* footer {
+    width: 393px;
+  } */
 }
 
 /* Responsive layout section for: Large Device: above 993 px  */
